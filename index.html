@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rithan A K | Portfolio</title>
+    <meta name="description" content="Portfolio of Rithan A K - Aspiring Software Engineer & Tech Enthusiast based in Tiruppur, India.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <canvas id="particles-bg"></canvas>
+
+    <!-- Navigation -->
+    <header class="header">
+        <nav class="navbar glass-effect">
+            <a href="#" class="logo">Rithan<span class="highlight">.</span></a>
+            <ul class="nav-links">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#achievements" class="nav-link">Achievements</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-controls">
+                <button id="theme-toggle" class="icon-btn" aria-label="Toggle Dark Mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="mobile-menu-btn icon-btn" aria-label="Toggle Menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero section">
+            <div class="hero-content reveal">
+                <div class="hero-text">
+                    <h2 class="greeting">Hello, I'm</h2>
+                    <h1 class="name">RITHAN A K</h1>
+                    <h3 class="subtitle">I am an <span class="typing-text"></span><span class="cursor">&nbsp;</span></h3>
+                    
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn btn-outline">Contact Me</a>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="https://github.com/Rithan47" target="_blank" class="social-icon" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://linkedin.com/in/Rithan-A-K" target="_blank" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://leetcode.com/rithan_47" target="_blank" class="social-icon" aria-label="LeetCode"><i class="fas fa-code"></i></a>
+                        <a href="mailto:ritha7940@gmail.com" class="social-icon" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+                
+                <div class="hero-image-container glass-effect tilt-card">
+                    <div class="hero-image">
+                        <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Rithan A K" id="profile-img">
+                    </div>
+                    <div class="floating-badge badge-1"><i class="fab fa-react"></i></div>
+                    <div class="floating-badge badge-2"><i class="fab fa-java"></i></div>
+                    <div class="floating-badge badge-3"><i class="fas fa-database"></i></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about section">
+            <h2 class="section-title reveal">About <span class="highlight">Me</span></h2>
+            <div class="about-content glass-effect reveal">
+                <p>I am a Computer Science and Engineering student at Kongu Engineering College with a strong interest in software development, web technologies, and problem-solving.</p>
+                <p>I enjoy building full-stack applications, learning new technologies, and creating impactful projects that solve real-world problems. My goal is to continuously improve as a developer while contributing to innovative and meaningful software solutions.</p>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="education section">
+            <h2 class="section-title reveal">My <span class="highlight">Education</span></h2>
+            <div class="timeline reveal">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-effect tilt-card">
+                        <span class="timeline-date">Current</span>
+                        <h3>Kongu Engineering College, Perundurai</h3>
+                        <h4>Bachelor of Engineering (Computer Science and Engineering)</h4>
+                        <p class="score">CGPA: 8.06</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-effect tilt-card">
+                        <span class="timeline-date">Previous</span>
+                        <h3>Bharathi Vidya Bhavan Hr. Sec. School, Erode</h3>
+                        <h4>Higher Secondary (HSC)</h4>
+                        <p class="score">Score: 85%</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-effect tilt-card">
+                        <span class="timeline-date">Previous</span>
+                        <h3>Bharathi Vidya Bhavan Hr. Sec. School, Erode</h3>
+                        <h4>Secondary School (SSLC)</h4>
+                        <p class="score">Score: 86%</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills section">
+            <h2 class="section-title reveal">Technical <span class="highlight">Skills</span></h2>
+            <div class="skills-grid reveal">
+                <div class="skill-category glass-effect tilt-card">
+                    <h3><i class="fas fa-code highlight"></i> Languages</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">C</span>
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">JavaScript</span>
+                    </div>
+                </div>
+                <div class="skill-category glass-effect tilt-card">
+                    <h3><i class="fas fa-laptop-code highlight"></i> Web Tech</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">HTML</span>
+                        <span class="skill-tag">CSS</span>
+                        <span class="skill-tag">React JS</span>
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">Express.js</span>
+                    </div>
+                </div>
+                <div class="skill-category glass-effect tilt-card">
+                    <h3><i class="fas fa-database highlight"></i> DB & Tools</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">MongoDB</span>
+                        <span class="skill-tag">GitHub</span>
+                        <span class="skill-tag">VS Code</span>
+                    </div>
+                </div>
+                <div class="skill-category glass-effect tilt-card">
+                    <h3><i class="fas fa-users highlight"></i> Soft Skills</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Team Collaboration</span>
+                        <span class="skill-tag">Time Management</span>
+                        <span class="skill-tag">Problem Solving</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects section">
+            <h2 class="section-title reveal">Featured <span class="highlight">Projects</span></h2>
+            <div class="projects-grid reveal">
+                
+                <div class="project-card glass-effect tilt-card">
+                    <div class="project-content">
+                        <h3>Student E-Learning Platform</h3>
+                        <p class="project-desc">Full-stack e-learning web application with Instructor and Student roles.</p>
+                        <div class="project-features">
+                            <ul>
+                                <li>Course management</li>
+                                <li>Video lessons & Notes</li>
+                                <li>Quizzes & Progress tracking</li>
+                                <li>Student enrollment</li>
+                            </ul>
+                        </div>
+                        <div class="project-tech">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>MongoDB</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="icon-link"><i class="fab fa-github"></i> Code</a>
+                            <a href="#" class="icon-link"><i class="fas fa-external-link-alt"></i> Live</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card glass-effect tilt-card">
+                    <div class="project-content">
+                        <h3>Intelligent Portfolio with Data Analytics</h3>
+                        <p class="project-desc">AI-powered portfolio analytics platform that analyzes sales and export data.</p>
+                        <div class="project-features">
+                            <ul>
+                                <li>Data visualization</li>
+                                <li>Trend & Performance tracking</li>
+                                <li>Business growth insights</li>
+                                <li>Interactive dashboards</li>
+                            </ul>
+                        </div>
+                        <div class="project-tech">
+                            <span>React</span>
+                            <span>JavaScript</span>
+                            <span>Charts</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="icon-link"><i class="fab fa-github"></i> Code</a>
+                            <a href="#" class="icon-link"><i class="fas fa-external-link-alt"></i> Live</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card glass-effect tilt-card">
+                    <div class="project-content">
+                        <h3>Social Media Platform</h3>
+                        <p class="project-desc">Modern social networking application with real-time features.</p>
+                        <div class="project-features">
+                            <ul>
+                                <li>Posts, Comments & Chat</li>
+                                <li>Notifications & Groups</li>
+                                <li>Time-based story expiration</li>
+                                <li>Automatic group deletion</li>
+                            </ul>
+                        </div>
+                        <div class="project-tech">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>MongoDB</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="icon-link"><i class="fab fa-github"></i> Code</a>
+                            <a href="#" class="icon-link"><i class="fas fa-external-link-alt"></i> Live</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Certifications & Interests -->
+        <section id="certifications" class="certifications section">
+            <h2 class="section-title reveal">Certifications & <span class="highlight">Interests</span></h2>
+            
+            <div class="cert-interest-container reveal">
+                <div class="certifications-list">
+                    <h3 class="subsection-title">Certifications</h3>
+                    <div class="cert-card glass-effect tilt-card">
+                        <div class="cert-icon"><i class="fas fa-certificate"></i></div>
+                        <div class="cert-info">
+                            <h4>MongoDB Certified Associate Developer</h4>
+                        </div>
+                    </div>
+                    <div class="cert-card glass-effect tilt-card">
+                        <div class="cert-icon"><i class="fab fa-java"></i></div>
+                        <div class="cert-info">
+                            <h4>Oracle Certified Java SE 17 Developer</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="interests-list">
+                    <h3 class="subsection-title">Areas of Interest</h3>
+                    <div class="interest-grid">
+                        <div class="interest-item glass-effect">
+                            <i class="fas fa-database"></i>
+                            <span>DBMS</span>
+                        </div>
+                        <div class="interest-item glass-effect">
+                            <i class="fab fa-java"></i>
+                            <span>OOP (Java)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Achievements & Sports -->
+        <section id="achievements" class="achievements section">
+            <h2 class="section-title reveal">Achievements & <span class="highlight">Leadership</span></h2>
+            
+            <div class="achievements-container reveal">
+                <div class="academic-achievements">
+                    <h3 class="subsection-title"><i class="fas fa-trophy highlight"></i> Academic</h3>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content glass-effect">
+                                <span class="timeline-date">2025</span>
+                                <h3>Paper Presentation</h3>
+                                <p>Won 2nd Place in Paper Presentation Event conducted by MAD Club, Kongu Engineering College.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content glass-effect">
+                                <span class="timeline-date">2025</span>
+                                <h3>Web Design</h3>
+                                <p>Won 2nd Place in Web Design Event conducted by MAD Club, Kongu Engineering College.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sports-achievements">
+                    <h3 class="subsection-title"><i class="fas fa-medal highlight"></i> Sports & Leadership</h3>
+                    <div class="leadership-card glass-effect tilt-card mb-4">
+                        <h3><i class="fas fa-users-cog"></i> Executive Member</h3>
+                        <p class="highlight-text">KEC Sports Association</p>
+                    </div>
+                    
+                    <div class="sports-card glass-effect tilt-card">
+                        <h3><i class="fas fa-running"></i> Handball Achievements</h3>
+                        <ul class="styled-list">
+                            <li><i class="fas fa-check-circle"></i> Consecutive 3-Year Anna University Zone Winners (2023–2025)</li>
+                            <li><i class="fas fa-check-circle"></i> Consecutive 3-Year CENTISE Tournament Runners (2023–2025)</li>
+                            <li><i class="fas fa-check-circle"></i> Participated in Inter-University Handball Competitions (2026)</li>
+                            <li><i class="fas fa-check-circle"></i> Represented Anna University South-Zone Inter-University Handball Tournament (2026)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact section">
+            <h2 class="section-title reveal">Get In <span class="highlight">Touch</span></h2>
+            <div class="contact-container reveal">
+                <div class="contact-card glass-effect tilt-card">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="icon-box"><i class="fas fa-user"></i></div>
+                            <div class="info-details">
+                                <h3>Name</h3>
+                                <p>RITHAN A K</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="icon-box"><i class="fas fa-envelope"></i></div>
+                            <div class="info-details">
+                                <h3>Email</h3>
+                                <p><a href="mailto:ritha7940@gmail.com">ritha7940@gmail.com</a></p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="icon-box"><i class="fas fa-phone-alt"></i></div>
+                            <div class="info-details">
+                                <h3>Phone</h3>
+                                <p><a href="tel:+919345522454">+91 9345522454</a></p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="icon-box"><i class="fas fa-map-marker-alt"></i></div>
+                            <div class="info-details">
+                                <h3>Location</h3>
+                                <p>Tiruppur, India</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-social">
+                        <h3>Connect with me</h3>
+                        <div class="social-links large">
+                            <a href="https://github.com/Rithan47" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
+                            <a href="https://linkedin.com/in/Rithan-A-K" target="_blank" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="https://leetcode.com/rithan_47" target="_blank" class="social-icon"><i class="fas fa-code"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>Designed & Developed by <span class="highlight">RITHAN A K</span></p>
+            <div class="social-links small">
+                <a href="https://github.com/Rithan47" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/in/Rithan-A-K" target="_blank" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                <a href="mailto:ritha7940@gmail.com" class="social-icon"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scroll-top" class="scroll-top-btn icon-btn hidden" aria-label="Scroll to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Custom Script -->
+    <script src="script.js"></script>
+</body>
+</html>

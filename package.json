@@ -1,0 +1,10 @@
+{
+  "name": "rithan-portfolio",
+  "version": "1.0.0",
+  "description": "Modern Software Engineer Portfolio",
+  "scripts": {
+    "dev": "npx live-server"
+  },
+  "author": "RITHAN A K",
+  "license": "ISC"
+}
